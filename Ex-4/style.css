@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef2f7;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Card: box model (width, padding, border, margin) + box shadow */
+.card {
+  width: 300px;
+  padding: 30px 24px;
+  margin: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d6e0ee;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 4px solid #4cc38a;
+  object-fit: cover;
+}
+
+h2 {
+  margin: 16px 0 4px;
+  font-size: 22px;
+  color: #2d3748;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 12px 0;
+  border-top: 1px solid #edf0f5;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.stats span {
+  display: block;
+  font-size: 11px;
+  color: #8a94a6;
+}
+
+.stats strong {
+  font-size: 15px;
+  color: #2d3748;
+}
+
+.bio {
+  margin: 0 0 24px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #5f6b7c;
+}
+
+.btn {
+  padding: 10px 36px;
+  font-size: 14px;
+  color: #4a5568;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* Hover effect on the button */
+.btn:hover {
+  color: #ffffff;
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
