@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Flexbox Layout</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      height: 100vh;
+      background: #25384B;
+
+      display: flex;
+      align-items: center;
+
+      padding: 0 3em;
+      gap: 3em;
+    }
+
+    .left-section {
+      flex: 1;
+      background: #A3CFCC;
+      height: 100%;
+    }
+
+    .right-section {
+      width: 10em;
+
+      background: #F7CFB6;
+
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      padding: 1em;
+      justify-content: center;
+    }
+
+    .item {
+      background: #86C2DE;
+      height: 100px;
+      flex-shrink: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+
+    <section class="left-section"></section>
+
+    <section class="right-section">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </section>
+
+  </div>
+
+</body>
+</html>
+```

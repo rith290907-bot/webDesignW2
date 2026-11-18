@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Layout</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      height: 100vh;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+
+      /* replaces the two 10em side columns of the grid */
+      padding: 0 10em;
+
+      background: pink;
+    }
+
+    header {
+      flex: 0 0 100px;
+      background: grey;
+    }
+
+    .line1 {
+      flex: 0 0 1em;
+      background: greenyellow;
+    }
+
+    main {
+      flex: 1;              /* takes the remaining height, like 1fr */
+      background: grey;
+    }
+
+    .line2 {
+      flex: 0 0 1em;
+      background: greenyellow;
+    }
+
+    footer {
+      flex: 0 0 100px;
+      background: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>Header</header>
+
+    <div class="line1"></div>
+
+    <main>Main</main>
+
+    <div class="line2"></div>
+
+    <footer>Footer</footer>
+
+  </div>
+</body>
+</html>
