@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+
+.content span {
+  padding: 8px 12px;
+}
+
+/* Default (wide screens): show BIG, hide SMALL */
+.small {
+  display: none;
+  background: red;
+  font-size: 14px;
+}
+
+.big {
+  display: inline-block;
+  background: #7ac900;
+}
+
+/* Narrow screens: show SMALL, hide BIG */
+@media only screen and (max-width: 600px) {
+  .small {
+    display: inline-block;
+  }
+
+  .big {
+    display: none;
+  }
+}
